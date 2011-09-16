@@ -1,0 +1,64 @@
+/* $Id$ */
+
+
+/* Rounded corners - corner */
+.roundedcorner-blue-thick {
+  border-bottom: 8px solid #a0cbed;
+  border-left: 9px solid #a0cbed;
+  border-right: 9px solid #a0cbed;
+  border-top: 8px solid #a0cbed;
+}
+
+.roundedcorner-blue-thick .section-inner {
+  padding: 0 10px;
+}
+
+.roundedcorner-blue-thick p:last-child {
+  margin: 0;
+}
+
+.roundedcorner-blue-thick .corner {
+  display: block;
+  height: 18px;
+  position: relative;
+  width: 18px;
+  z-index: 10;
+}
+
+.roundedcorner-blue-thick .corner-top-left {
+  left: -9px;
+  top: -8px;
+}
+
+.roundedcorner-blue-thick .corner-top-right {
+  float: right;
+  right: -9px;
+  top: -8px;
+}
+
+.roundedcorner-blue-thick .corner-bottom-left {
+  bottom: -8px;
+  left: -9px;
+}
+
+.roundedcorner-blue-thick .corner-bottom-right {
+  bottom: -8px;
+  float: right;
+  right: -9px;
+}
+
+.roundedcorner-blue-thick .corner-top-left {
+  background: url(../images/rounded-corner.png) no-repeat 0 0;
+}
+
+.roundedcorner-blue-thick .corner-top-right {
+  background: url(../images/rounded-corner.png) no-repeat 100% 0;
+}
+
+.roundedcorner-blue-thick .corner-bottom-left {
+  background: url(../images/rounded-corner.png) no-repeat 0 100%;
+}
+
+.roundedcorner-blue-thick .corner-bottom-right {
+  background: url(../images/rounded-corner.png) no-repeat 100% 100%;
+}

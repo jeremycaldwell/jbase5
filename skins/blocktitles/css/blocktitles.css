@@ -1,0 +1,13 @@
+/* $Id$ */
+
+
+.blocktitle-lightblue-rounded-whitetext header h2 {
+  background: #38c0e2;
+  color: #fff;
+  font-size: 116.7%; /* 14px/12px */
+  font-weight: bold;
+  padding: 10px 15px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
