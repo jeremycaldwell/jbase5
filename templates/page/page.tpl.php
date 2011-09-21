@@ -135,26 +135,20 @@
         <section>
 
           <?php if ($page['preface_first']): ?>
-          <div id="preface-first">
-            <div id="preface-first-inner" class="column">
-              <?php print render($page['preface_first']); ?>
-            </div><!-- /preface-first-inner -->
+          <div id="preface-first" class="column">
+            <?php print render($page['preface_first']); ?>
           </div><!-- /preface-first -->
           <?php endif; ?>
           
           <?php if ($page['preface_second']): ?>
-          <div id="preface-second">
-            <div id="preface-second-inner" class="column">
-              <?php print render($page['preface_second']); ?>
-            </div><!-- /preface-second-inner -->
+          <div id="preface-second" class="column">
+            <?php print render($page['preface_second']); ?>
           </div><!-- /preface-second -->
           <?php endif; ?>
           
           <?php if ($page['preface_third']): ?>
-          <div id="preface-last">
-            <div id="preface-last-inner" class="column">
-              <?php print render($page['preface_third']); ?>
-            </div><!-- /preface-last-inner -->
+          <div id="preface-last" class="column">
+            <?php print render($page['preface_third']); ?>
           </div><!-- /preface-last -->
           <?php endif; ?>
 
@@ -254,7 +248,7 @@
         <?php endif; ?>
   
         <?php if ($page['postscript_third']): ?>
-        <div id="postscript-third" class="column">
+        <div id="postscript-last" class="column">
           <?php print render($page['postscript_third']); ?>
         </div><!-- /postscript-third -->
         <?php endif; ?>
@@ -280,7 +274,7 @@
             <?php endif; ?>
       
             <?php if ($page['footer_third']): ?>
-            <div id="footer-third" class="column">
+            <div id="footer-last" class="column">
               <?php print render($page['footer_third']); ?>
             </div><!-- /footer-third -->
             <?php endif; ?>

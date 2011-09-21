@@ -36,16 +36,22 @@ h2 {
 
 h3 {
   line-height: 125%;
+  margin-bottom: 5px;
 }
 
 h4 {
-  line-height: 1.25;
+  line-height: 125%;
+  margin-bottom: 5px;
 }
 
 h5 {
+  line-height: 125%;
+  margin-bottom: 5px;
 }
 
 h6 {
+  line-height: 125%;
+  margin-bottom: 5px;
 }
 
 ::selection {
@@ -87,8 +93,8 @@ strong {
 
 ul,
 ol {
-  margin-bottom: 1em;
-  margin-left: 2em;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 ul li,
@@ -100,12 +106,12 @@ ol li {
 /* Page
 -------------------------------------------------------------- */
 #page {
-  margin: 0 auto;
+  margin: 20px auto;
   width: 960px;
 }
 
 .inner {
-  padding: 0 20px;
+  padding: 0;
 }
 
 
@@ -140,11 +146,20 @@ nav ul#main-menu li {
   padding: 0;
 }
 
+nav ul#main-menu li.last {
+  border-right: none;
+}
+
 nav ul#main-menu li a:link,
 nav ul#main-menu li a:visited {
   color: #999;
-  padding: 0 18px;
+  padding: 0 10px;
   text-decoration: none;
+}
+
+nav ul#main-menu li.first a:link,
+nav ul#main-menu li.firce a:visited {
+  padding-left: 0;
 }
 
 nav ul#main-menu li a:hover,
@@ -209,10 +224,7 @@ ul#secondary-menu li a:focus {
 /* Header
 -------------------------------------------------------------- */
 header[role="banner"] {
-}
-
-header[role="banner"] #header-inner {
-  padding: 20px;
+  margin-bottom: 20px;
 }
 
 header[role="banner"] #logo {
@@ -221,29 +233,6 @@ header[role="banner"] #logo {
 
 #header-inner .column {
   float: left;
-}
-
-
-/* Header regions - First/Second
--------------------------------------------------------------- */
-#header-wrapper.headers-1 .column {
-  width: 960px;
-}
-
-
-/* Header regions - First:Second
--------------------------------------------------------------- */
-#header-wrapper.headers-2 #header-first.column {
-  width: 400px;
-}
-
-#header-wrapper.headers-2 #header-second.column {
-  margin: 0 18px 0 40px;
-  width: 522px;
-}
-
-#header-first .region {
-  padding-top: 40px;
 }
 
 
@@ -283,22 +272,33 @@ header[role="banner"] #logo {
 }
 
 
+/* Preface regions
+-------------------------------------------------------------- */
+#preface-wrapper {
+  margin-bottom: 20px;
+}
+
+.preface .column {
+  float: left;
+}
+
+
 /* Preface regions - First/Middle/Last
 -------------------------------------------------------------- */
 .prefaces-1 .column {
-  width: 920px;
+  width: 960px;
 }
 
 
 /* Preface regions - First:Middle:Last
 -------------------------------------------------------------- */
 .prefaces-3 .column {
-  float: left;
-  width: 290px;
+  width: 307px;
 }
 
-.prefaces-3 #preface-second .column {
-  margin: 0 25px;
+.prefaces-3 #preface-second.column {
+  margin: 0 20px;
+  width: 306px;
 }
 
 
@@ -309,8 +309,10 @@ header[role="banner"] #logo {
   width: 470px;
 }
 
-.prefaces-2 #preface-first .column {
-  margin-right: 40px;
+body.preface-first-second #preface-second.column,
+body.preface-first-third #preface-last.column,
+body.preface-second-third #preface-last.column {
+  margin-left: 20px;
 }
 
 
@@ -349,7 +351,7 @@ body.sidebar-first #sidebar-first {
 
 body.sidebar-first #main {
   float: left;
-  width: 740px;
+  width: 780px;
 }
 
 
@@ -357,7 +359,7 @@ body.sidebar-first #main {
 -------------------------------------------------------------- */
 body.layout-main-second #main {
   float: left;
-  width: 740px;
+  width: 780px;
 }
 
 body.layout-main-second #sidebar-second {
@@ -377,7 +379,7 @@ body.layout-first-main-second #main {
   float: left;
   margin: 0 20px 0 20px;
   position: relative;
-  width: 560px;
+  width: 600px;
   z-index: 1;                    /* keep content visible on admin pages */
 }
 
@@ -386,47 +388,54 @@ body.layout-first-main-second #sidebar-second {
 }
 
 
-/* Postscript
+/* Postscript Top
 -------------------------------------------------------------- */
-#postscript-wrapper .column {
+#postscript-top-wrapper {
+  margin-bottom: 20px;
+}
+
+
+/* Postscript regions
+-------------------------------------------------------------- */
+#postscript-wrapper {
+  margin-bottom: 20px;
+}
+
+.postscript .column {
   float: left;
 }
 
 
 /* Postscript regions - First/Middle/Last
 -------------------------------------------------------------- */
-#postscript-wrapper.postscripts-1 .column {
+.postscripts-1 .column {
   width: 960px;
+}
+
+
+/* Postscript regions - First:Middle:Last
+-------------------------------------------------------------- */
+.postscripts-3 .column {
+  width: 307px;
+}
+
+.postscripts-3 #postscript-second.column {
+  margin: 0 20px;
+  width: 306px;
 }
 
 
 /* Postscript regions - First:Middle/First:Last/Middle:Last
 -------------------------------------------------------------- */
 /* First:Second */
-body.postscript-first-second #postscript-wrapper .column {
-  width: 470px;
+.postscripts-2 .column {
+  width: 460px;
 }
 
-body.postscript-first-second #postscript-wrapper #postscript-first .column {
-  margin-right: 40px;
-}
-
-/* First:Third */
-#postscript-wrapper.postscripts-2 .column {
-  margin-right: 20px;
-  width: 634px;
-}
-
-
-/* Postscript regions - First:Middle:Last
--------------------------------------------------------------- */
-#postscript-wrapper.postscripts-3 .column {
-  float: left;
-  width: 290px;
-}
-
-#postscript-wrapper.postscripts-3 #postscript-second.column {
-  margin: 0 25px;
+body.postscript-first-second #postscript-second.column,
+body.postscript-first-third #postscript-last.column,
+body.postscript-second-third #postscript-last.column {
+  margin-left: 40px;
 }
 
 
@@ -447,47 +456,36 @@ footer[role="contentinfo"] {
 }
 
 
-/* Footer regions - First/Second
+/* Footer regions - First/Middle/Last
 -------------------------------------------------------------- */
-#footer-wrapper .footers-1 .column {
+.footers-1 .column {
   width: 960px;
 }
 
 
-/* Footer regions - First:Second
+/* Footer regions - First:Middle:Last
 -------------------------------------------------------------- */
-/* Second:Third */
-body.footers-second-third .footer #footer-second.column {
-  width: 450px;
+.footers-3 .column {
+  width: 307px;
 }
 
-body.footers-second-third .footer #footer-third.column {
+.footers-3 #footer-second.column {
+  margin: 0 20px;
+  width: 306px;
+}
+
+
+/* Footer regions - First:Middle/First:Last/Middle:Last
+-------------------------------------------------------------- */
+/* First:Second */
+.footers-2 .column {
+  width: 470px;
+}
+
+body.footers-first-second #footer-second.column,
+body.footers-first-third #footer-last.column,
+body.footers-second-third #footer-last.column {
   margin-left: 20px;
-  width: 450px;
-}
-
-/* Footer regions - First:Third
--------------------------------------------------------------- */
-/* Second:Third */
-body.footers-first-third .footer #footer-first.column {
-  width: 450px;
-}
-
-body.footers-first-third .footer #footer-third.column {
-  margin-left: 20px;
-  width: 450px;
-}
-
-
-/* Footer regions - First:Second:Third
--------------------------------------------------------------- */
-#footer-wrapper.footers-3 .column {
-  float: left;
-  width: 290px;
-}
-
-#footer-wrapper.footers-3 #footer-second.column {
-  margin: 0 25px;
 }
 
 

@@ -2,11 +2,11 @@
 
 // Placeholder for custom function
 /*
-Drupal.behaviors.jbase5LoginToggle = {
+Drupal.behaviors.jbase5Something = {
   attach: function (context, settings) {
     
-    // User login dropdown block
-    $('a#toboggan-login-link').click(function () {
+    // Description
+    $('a#something').click(function () {
       $(this).toggleClass('active');
     });
     
@@ -16,7 +16,7 @@ Drupal.behaviors.jbase5LoginToggle = {
 
 
 // Modernizer script for IE
-Drupal.behaviors.jbase5NewsletterSubmitText = {
+Drupal.behaviors.jbase5PlaceholderText = {
   attach: function (context, settings) {
     if(!Modernizr.input.placeholder){
     

@@ -1,7 +1,7 @@
 // @font-face font loading - Stops flash of unstyled fonts
 WebFontConfig = {
   custom: {   
-    families: ['ChevinDemiBoldRegular', 'ChevinLightRegular', 'ChevinMediumRegular']
+    families: ['Font1', 'Font2', 'Font3']
   }
 };
 (function() {
