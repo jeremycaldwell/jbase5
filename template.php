@@ -104,6 +104,14 @@ function jbase5_preprocess_html(&$vars) {
  * Add preface, postscript, & footers classes with number of active sub-regions
  */
 function jbase5_preprocess_page(&$vars) {
+
+  // Page tpl suggestions
+  if (isset($vars['node'])) {
+    // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
+    $vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
+  }
+
+  // Region list
   $region_list = array(
     'prefaces' => array('preface_first', 'preface_second', 'preface_third'), 
     'postscripts' => array('postscript_first', 'postscript_second', 'postscript_third'),
