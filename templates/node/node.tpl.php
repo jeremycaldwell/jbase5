@@ -78,7 +78,7 @@
  */
 ?>
 
-<article id="node-<?php print $node->nid; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<article id="node-<?php print $node->nid; ?>" class=" <?php print 'node-' . $view_mode; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
 
   <?php if ($user_picture || !$page || $display_submitted): ?>
   <header>
@@ -98,7 +98,7 @@
   </header>
   <?php endif; ?>
 
-  <div class="content clearfix <?php print 'node-' . $view_mode; ?>"<?php print $content_attributes; ?>>
+  <div class="content clearfix"<?php print $content_attributes; ?>>
 
     <?php
       // We hide the comments, tags and links now so that we can render them later.
